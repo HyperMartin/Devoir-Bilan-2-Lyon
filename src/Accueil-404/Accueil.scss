@@ -1,0 +1,209 @@
+/* 
+   PAGE D'ACCUEIL - TROUVE TON ARTISAN
+   Couleurs principales du devoir :
+   Bleu clair : #0074c7
+   Bleu foncé : #00497c
+   Fond clair : #f1f8fc
+   Texte foncé : #384050
+   Vert accent : #82b864
+ */
+
+/* Page principale d'accueil */
+.home {
+  background-color: #f1f8fc;
+  color: #384050;
+  min-height: 100vh;
+  padding: 1.5rem 1rem 3rem;
+}
+
+/* Titre principal de la page */
+#home-title {
+  color: white;
+  font-weight: bold;
+}
+
+/* HERO / INTRODUCTION */
+
+/* Section d'introduction en haut de la page */
+.home__hero {
+  background: linear-gradient(135deg, #0074c7, #00497c);
+  color: #f1f8fc;
+  border-radius: 1rem;
+  padding: 2rem 1.25rem;
+  margin-bottom: 2rem;
+}
+
+/* Contenu placé dans la section hero */
+.home__hero-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Petit texte au-dessus du titre */
+.home__eyebrow {
+  margin: 0 0 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+/* Titre dans la section hero */
+.home__hero h1 {
+  margin: 0 0 1rem;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+/* Texte d'introduction */
+.home__intro {
+  margin: 0;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+/* EN-TÊTES DE SECTION */
+
+/* Conteneur des titres de section */
+.home__section-header {
+  max-width: 900px;
+  margin: 0 auto 1.5rem;
+}
+
+/* Titres de section */
+.home__section-header h2 {
+  color: #00497c;
+  margin-bottom: 0.75rem;
+  font-size: 1.75rem;
+}
+
+/* Textes sous les titres de section */
+.home__section-header p {
+  margin: 0;
+  line-height: 1.7;
+}
+
+/*SECTION : COMMENT TROUVER MON ARTISAN ?*/
+
+/* Section des étapes */
+.home__steps {
+  margin-bottom: 3rem;
+}
+
+/* Grille des étapes */
+.home__steps-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Carte d'une étape */
+.home__step-card {
+  background-color: #ffffff;
+  border: 1px solid rgba(56, 64, 80, 0.12);
+  border-radius: 1rem;
+  padding: 1.25rem;
+  box-shadow: 0 8px 20px rgba(56, 64, 80, 0.08);
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+/* Numéro de l'étape */
+.home__step-number {
+  flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #0074c7;
+  color: #f1f8fc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+/* Texte de l'étape */
+.home__step-text {
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* SECTION : ARTISANS DU MOIS */
+
+/* Section des artisans mis en avant */
+.home__top {
+  margin-bottom: 2rem;
+}
+
+/* Grille des cartes artisans */
+.home__cards-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Carte d'un artisan du mois */
+.home__artisan-card {
+  background-color: #ffffff;
+  border: 1px solid rgba(56, 64, 80, 0.12);
+  border-radius: 1rem;
+  padding: 1.25rem;
+  box-shadow: 0 8px 20px rgba(56, 64, 80, 0.08);
+}
+
+/* Nom de l'artisan */
+.home__artisan-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  color: #00497c;
+  font-size: 1.2rem;
+}
+
+/* Note de l'artisan */
+.home__artisan-rating {
+  margin: 0 0 0.75rem;
+  color: #82b864; /* Accentuation légère */
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+/* Texte complémentaire de la note */
+.home__rating-text {
+  color: #384050;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+/* Spécialité et localisation de l'artisan */
+.home__artisan-specialty,
+.home__artisan-location {
+  margin: 0 0 0.5rem;
+  line-height: 1.6;
+}
+
+/* ACCESSIBILITÉ */
+
+/* Focus visible pour la navigation au clavier */
+.home a:focus-visible,
+.home button:focus-visible {
+  outline: 3px solid #82b864;
+  outline-offset: 3px;
+}
+
+/* Lien sur le nom des artisans du mois */
+.home__artisan-link {
+  color: #00497c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Survol du nom cliquable */
+.home__artisan-link:hover {
+  color: #82b864;
+  text-decoration: underline;
+}

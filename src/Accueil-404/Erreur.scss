@@ -1,0 +1,38 @@
+/* 
+   Bloc principal de la page d'erreur
+   - largeur limitée à 80% de la page
+   - centré horizontalement avec margin auto
+ */
+section {margin-left: auto; margin-right: auto;
+ width: 80%; padding: 1rem;
+}
+
+/* 
+Style du lien au survol:
+- la couleur devient rouge pour montrer l'interaction
+ */
+section a:hover { color: #cd2c2e;}
+
+/* 
+   Style du lien de retour
+   - suppression du soulignement
+   - couleur bleue principale
+   - affichage en bloc pour mieux le centrer
+*/
+section a {text-decoration: none;  color: #0074c7;
+  text-align: center; display: block;
+}
+
+/* 
+   Style du paragraphe
+   - centre le texte du message d'erreur
+*/
+section p {text-align: center;}
+
+
+/*Style de l'image*/
+
+img{
+   width: 100%;
+   height: auto;
+}

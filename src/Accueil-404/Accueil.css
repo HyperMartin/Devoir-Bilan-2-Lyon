@@ -1,0 +1,217 @@
+@charset "UTF-8";
+/* =========================================================
+   PAGE D'ACCUEIL - TROUVE TON ARTISAN
+   ---------------------------------------------------------
+   Objectif :
+   - page d’accueil simple, claire et accessible
+   - design mobile first
+   - respect de la palette du sujet
+========================================================= */
+.home {
+  background-color: #f1f8fc;
+  color: #384050;
+  min-height: 100vh;
+  padding: 1.5rem 1rem 3rem;
+}
+
+/* ---------------------------------------------------------
+   HERO / INTRODUCTION
+--------------------------------------------------------- */
+.home__hero {
+  background: linear-gradient(135deg, #0074c7, #00497c);
+  color: #f1f8fc;
+  border-radius: 1rem;
+  padding: 2rem 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.home__hero-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.home__eyebrow {
+  margin: 0 0 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.home__hero h1 {
+  margin: 0 0 1rem;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.home__intro {
+  margin: 0;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+/* ---------------------------------------------------------
+   EN-TÊTE DE SECTION
+--------------------------------------------------------- */
+.home__section-header {
+  max-width: 900px;
+  margin: 0 auto 1.5rem;
+}
+
+.home__section-header h2 {
+  color: #00497c;
+  margin-bottom: 0.75rem;
+  font-size: 1.75rem;
+}
+
+.home__section-header p {
+  margin: 0;
+  line-height: 1.7;
+}
+
+/* ---------------------------------------------------------
+   SECTION ETAPES
+--------------------------------------------------------- */
+.home__steps {
+  margin-bottom: 3rem;
+}
+
+.home__steps-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.home__step-card {
+  background-color: #ffffff;
+  border: 1px solid rgba(56, 64, 80, 0.12);
+  border-radius: 1rem;
+  padding: 1.25rem;
+  box-shadow: 0 8px 20px rgba(56, 64, 80, 0.08);
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.home__step-number {
+  flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #0074c7;
+  color: #f1f8fc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.home__step-text {
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* ---------------------------------------------------------
+   SECTION ARTISANS DU MOIS
+--------------------------------------------------------- */
+.home__top {
+  margin-bottom: 2rem;
+}
+
+.home__cards-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.home__artisan-card {
+  background-color: #ffffff;
+  border: 1px solid rgba(56, 64, 80, 0.12);
+  border-radius: 1rem;
+  padding: 1.25rem;
+  box-shadow: 0 8px 20px rgba(56, 64, 80, 0.08);
+}
+
+.home__artisan-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  color: #00497c;
+  font-size: 1.2rem;
+}
+
+.home__artisan-rating {
+  margin: 0 0 0.75rem;
+  color: #cd2c2e;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.home__rating-text {
+  color: #384050;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.home__artisan-specialty,
+.home__artisan-location {
+  margin: 0 0 0.5rem;
+  line-height: 1.6;
+}
+
+/* ---------------------------------------------------------
+   ACCESSIBILITÉ : focus visible
+--------------------------------------------------------- */
+.home a:focus-visible,
+.home button:focus-visible {
+  outline: 3px solid #82b864;
+  outline-offset: 3px;
+}
+
+/* ---------------------------------------------------------
+   RESPONSIVE - TABLETTE
+--------------------------------------------------------- */
+@media (min-width: 768px) {
+  .home {
+    padding: 2rem 1.5rem 4rem;
+  }
+  .home__hero h1 {
+    font-size: 2.5rem;
+  }
+  .home__steps-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .home__cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* ---------------------------------------------------------
+   RESPONSIVE - DESKTOP
+--------------------------------------------------------- */
+@media (min-width: 992px) {
+  .home__hero {
+    padding: 3rem 2rem;
+  }
+  .home__hero h1 {
+    font-size: 3rem;
+  }
+  .home__steps-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .home__cards-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/* ---------------------------------------------------------
+   OPTION ACCESSIBILITÉ : réduction des animations
+--------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    scroll-behavior: auto;
+  }
+}
+
+/*# sourceMappingURL=Accueil.css.map */

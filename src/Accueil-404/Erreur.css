@@ -1,0 +1,15 @@
+section {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section Link:hover {
+  color: #cd2c2e;
+}
+
+section Link {
+  text-decoration: none;
+  color: #0074c7;
+}
+
+/*# sourceMappingURL=Erreur.css.map */

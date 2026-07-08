@@ -1,0 +1,112 @@
+@charset "UTF-8";
+/* Page principale */
+.artisans-page {
+  background-color: #f1f8fc;
+  min-height: 100vh;
+  padding: 50px 24px;
+  color: #384050;
+}
+
+/* Titre principal */
+.artisans-page h1 {
+  text-align: center;
+  color: #00497c;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+/* Grille des artisans */
+.artisans-grid {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+/* Carte artisan */
+.artisan-card {
+  background-color: white;
+  border: 2px solid #f1f8fc;
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 0 6px 16px rgba(56, 64, 80, 0.14);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Animation au survol de la carte */
+.artisan-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 24px rgba(56, 64, 80, 0.22);
+}
+
+/* Nom de l’artisan */
+.artisan-card h2 {
+  color: #0074c7;
+  font-size: 1.35rem;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+
+/* Textes des cartes */
+.artisan-card p {
+  margin-bottom: 10px;
+  color: #384050;
+  line-height: 1.5;
+}
+
+/* Éléments importants */
+.artisan-card strong {
+  color: #00497c;
+}
+
+/* Bouton / lien vers la fiche */
+.artisan-link {
+  display: inline-block;
+  margin-top: 14px;
+  padding: 10px 18px;
+  background-color: #0074c7;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Survol du bouton */
+.artisan-link:hover {
+  background-color: #82b864;
+  color: white;
+  transform: scale(1.04);
+}
+
+/* Message si aucun résultat */
+.no-result {
+  text-align: center;
+  color: #cd2c2e;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* Tablette */
+@media screen and (max-width: 992px) {
+  .artisans-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* Mobile */
+@media screen and (max-width: 576px) {
+  .artisans-page {
+    padding: 35px 16px;
+  }
+  .artisans-grid {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+  .artisan-card {
+    padding: 20px;
+  }
+}
+
+/*# sourceMappingURL=Artisan.css.map */

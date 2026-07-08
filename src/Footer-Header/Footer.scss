@@ -1,0 +1,245 @@
+ /* 
+  FOOTER - TROUVE TON ARTISAN
+ Couleurs utilisées :
+ Bleu principal : #0074c7
+  Bleu foncé : #00497c
+  Texte clair : #f1f8fc
+  Vert au survol : #82b864
+ */
+
+/* Footer général */
+.site-footer {
+  background-color: #0074c7;
+  color: #f1f8fc;
+  margin-top: 3rem;
+  padding: 2.5rem 1rem 1.5rem;
+  border-top: 4px solid #00497c;
+}
+
+/* Liens du footer */
+.site-footer a {
+  color: #f1f8fc;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+/* Survol et focus des liens */
+.site-footer a:hover,
+.site-footer a:focus {
+  color: #82b864;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* Conteneur principal du footer */
+.site-footer__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Partie haute du footer : contact à gauche et liens légaux à droite */
+.site-footer__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(241, 248, 252, 0.35);
+}
+
+/* Bloc contact à gauche */
+.site-footer__contact p {
+  text-align: left;
+}
+
+/* Liens du bloc contact */
+.site-footer__contact a {
+  text-align: left;
+}
+
+/* Titres dans le footer */
+.site-footer__title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* Adresse du footer */
+.site-footer__address {
+  font-style: normal;
+  line-height: 1.7;
+}
+
+/* Paragraphes de l'adresse */
+.site-footer__address p {
+  margin: 0 0 0.35rem;
+}
+
+/* Liens dans l'adresse */
+.site-footer__address a {
+  font-weight: 600;
+}
+
+/* Bloc des liens légaux à droite */
+.site-footer__legal {
+  text-align: right;
+  padding: 1rem;
+  min-width: 20%;
+}
+
+/* Liste des liens légaux */
+.site-footer__legal-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  align-items: flex-start;
+}
+
+/* Éléments de la liste légale */
+.site-footer__legal-list li a {
+  text-align: right;
+}
+
+/* Titre de la liste légale */
+#footer-legal-title {
+  text-align: left;
+}
+
+/* Bloc des réseaux sociaux */
+.site-footer__social {
+  padding: 1.5rem 0;
+}
+
+/* Boîte contenant les réseaux sociaux */
+#Boite {
+  width: 50%;
+  margin: 0 auto;
+}
+
+/* Titre des réseaux sociaux */
+#Boite h2 {
+  text-align: center;
+}
+
+/* Liste des réseaux sociaux */
+.site-footer__social-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  justify-content: center;
+  gap: 0.85rem;
+  flex-wrap: wrap;
+}
+
+/* Liens des réseaux sociaux */
+.site-footer__social-list li a {
+  width: 44px;
+  height: 44px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #f1f8fc;
+  border-radius: 50%;
+  border: 2px solid transparent;
+
+  transition: 0.2s ease;
+}
+
+/* Survol des réseaux sociaux */
+.site-footer__social-list li a:hover,
+.site-footer__social-list li a:focus {
+  background-color: #0074c7;
+  border-color: #82b864;
+  opacity: 0.8;
+}
+
+/* Icônes des réseaux sociaux */
+.site-footer__social-list img {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+/* Partie basse du footer */
+.site-footer__bottom {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+/* Texte de copyright */
+.site-footer__bottom p {
+  margin: 0;
+}
+
+/* RESPONSIVE DESIGN*/
+
+@media screen and (max-width: 900px) {
+  /* La partie haute passe en colonne */
+  .site-footer__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+
+    margin: 0;
+    padding: 0 0 2rem;
+    text-align: center;
+    list-style: none;
+  }
+
+  /* Le bloc contact est centré */
+  .site-footer__contact {
+    text-align: center;
+  }
+
+  /* Paragraphes de l'adresse centrés */
+  .site-footer__address p {
+    text-align: center;
+  }
+
+  /* Liens de l'adresse centrés */
+  .site-footer__address a {
+    text-align: center;
+  }
+
+  /* Bloc légal centré */
+  .site-footer__legal {
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  /* Liste légale centrée */
+  .site-footer__legal-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    align-items: center;
+  }
+
+  /* Éléments légaux centrés */
+  .site-footer__legal-list li {
+    text-align: center;
+  }
+
+  /* Titre des liens légaux centré */
+  #footer-legal-title {
+    text-align: center;
+  }
+
+  /* Boîte des réseaux sociaux plus large sur petit écran */
+  #Boite {
+    width: 70%;
+  }
+}

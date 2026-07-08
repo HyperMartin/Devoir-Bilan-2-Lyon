@@ -1,0 +1,101 @@
+/* 
+   PAGE CONTACT - TROUVE TON ARTISAN
+   Couleurs principales :
+   Fond clair : #f1f8fc
+   Bleu principal : #0074c7
+   Bleu foncé : #00497c
+   Texte foncé : #384050
+   Vert au survol : #82b864
+ */
+
+/* Conteneur principal de la page contact */
+.contact-page {
+  width: 90%;
+  max-width: 850px;
+  margin: 50px auto;
+  padding: 35px;
+  background-color: #f1f8fc;
+  color: #384050;
+  border-radius: 12px;
+}
+
+/* Titre principal */
+.contact-page h1 {
+  text-align: center;
+  color: #0074c7!important;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Texte d'introduction sous le titre */
+.contact-introduction {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+/* Formulaire de contact */
+.contact-form {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(56, 64, 80, 0.15);
+}
+
+/* Bloc contenant un label et un champ */
+.contact-form div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+/* Labels du formulaire */
+.contact-form label {
+  color: #00497c;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+/* Champs de saisie et zone de message */
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 2px solid #dce8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #384050;
+}
+
+/* Effet quand l'utilisateur clique dans un champ */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #0074c7;
+}
+
+/* Zone de message */
+.contact-form textarea {
+  min-height: 150px;
+  resize: none;
+}
+
+/* Bouton d'envoi */
+.contact-form button {
+  background-color: #0074c7;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Survol du bouton */
+.contact-form button:hover {
+  background-color: #82b864;
+}
+
+

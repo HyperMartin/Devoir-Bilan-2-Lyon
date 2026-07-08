@@ -1,0 +1,11 @@
+/*Importation de la police demandée*/
+
+@font-face {
+font-family: Graphik ;
+src: url('./Assets/Fonts/Graphik-Regular-Trial.woff'),
+url('./Assets/Fonts/Graphik-Family/Graphik-Regular-Trial.otf');
+}
+
+body{
+    font-family: "Graphik", sans-serif !important ;
+}
